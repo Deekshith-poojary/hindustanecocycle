@@ -5,7 +5,7 @@ import clsx from 'clsx';
 const RotatingContent = ({ item, inView }) => (
   <div
     className={clsx(
-      'flex flex-col-reverse h-full items-center w-full px-10 m-10 transition-transform duration-700 ease-in-out',
+      'flex flex-col-reverse h-full items-center w-full px-10 md:m-10 transition-transform duration-700 ease-in-out',
       inView ? 'rotate-0 opacity-100 scale-100' : 'rotate-x-12 opacity-0 scale-70',item.pos ? 'md:flex-row-reverse':'md:flex-row'
     )}
   >
