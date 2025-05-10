@@ -1,11 +1,13 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import { Bodycomp } from "../components";
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-slate-100 flex items-center justify-center p-8">
+    <div>        
+    <Bodycomp title="Contact Us" className='' />
+    <div className="min-h-screen bg-slate-100 flex items-center justify-center p-8 rounded-t-4xl" >
       <div className="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-md flex flex-col gap-8">
-        <h2 className="text-3xl font-extrabold text-center text-slate-800">Contact Us</h2>
+        {/* <h2 className="text-3xl font-extrabold text-center text-slate-800">Contact Us</h2> */}
 
         {/* Email */}
         <a
@@ -50,5 +52,7 @@ export default function Contact() {
         </a>
       </div>
     </div>
+    </div>
+
   );
 }

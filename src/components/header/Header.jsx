@@ -3,7 +3,7 @@ import {Container, Logo, LogoutBtn} from '../index'
 import { Link } from 'react-router-dom'
 import {useSelector} from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiXCircle } from 'react-icons/fi';
 
 function Header({
   className = "",
@@ -36,24 +36,26 @@ function Header({
 
 
   return (
-    <header className={`py-3 text-yellow-200 ${className}`}>
+    <header className={`py-3 bg-green-500 m-3 mt-5 rounded-3xl shadow-xs ${className}`}>
       <Container>
-        <nav className='flex'>
+        <nav className='flex md:flex-row flex-col'>
+          <div className='flex'> 
           <div className='mr-4'>
             <Link to='/'>
               <Logo width='70px'   />
 
               </Link>
           </div>
-          <div className="md:hidden md:flex-col ml-auto">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">
-              {menuOpen ? <FiX /> : <FiMenu />}
+          <div className="md:hidden md:flex-col ml-auto mt-1">
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-4xl text-cyan-200">
+              {menuOpen ? <FiXCircle /> : <FiMenu />}
             </button>
+          </div>
           </div>
           <ul
             className={`
-              flex-col md:flex-row md:flex ml-auto gap-4 
-              ${menuOpen ? 'flex absolute top-16 left-0 w-full bg-gray-900 text-shadow-amber-100 p-4 z-50 shadow-md' : 'hidden'} 
+              flex-col  md:flex md:flex-row md:ml-auto gap-4 
+              ${menuOpen ? 'flex m-0 text-cyan-400 text-shadow-amber-100 p-4 z-50' : 'hidden'} 
               md:static md:bg-transparent md:text-white md:shadow-none md:items-center
             `}
           >
@@ -66,7 +68,7 @@ function Header({
                         navigate(item.slug);
                         setMenuOpen(false);
                       }}
-                      className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
+                      className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 hover:text-black rounded-full text-xl"
                     >
                       {item.name}
                     </button>

@@ -24,16 +24,16 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className='bg-cover bg-center bg-gray-900 '
+    <div className='bg-cover bg-center bg-green-600 '
     // style={{
     //     backgroundImage:
     //       "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqnoZcYJEiD-Bpwvq9cA3HjS4r5xqFKBp-uQ&s')",
     //   }}
     >
-    <div className="min-h-screen flex flex-wrap content-between">
+    <div className="flex flex-wrap content-between">
       <div className="w-full block">
         <Header />
-        <main className="bg-base-200 min-h-screen">
+        <main className="bg-base-200">
           <Outlet />
         </main>
         <Footer />

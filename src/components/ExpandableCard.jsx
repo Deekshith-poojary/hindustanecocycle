@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-export default function ExpandableCard() {
+export default function ExpandableCard(
+  {title="",desc=""}
+) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCardClick = () => {
@@ -12,13 +14,13 @@ export default function ExpandableCard() {
   };
 
   return (
-    <div className="p-8 bg-slate-100 h-full flex items-center justify-center">
+    <div className="p-8 bg-slate-100 h-full w-full flex items-center justify-center">
       {/* Main card */}
       <div
-        className="w-[80%] h-[10%] bg-white rounded-lg shadow-md flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-105"
+        className="md:w-[80%] w-[93%] h-[10%] bg-white rounded-lg shadow-md flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-105"
         onClick={handleCardClick}
       >
-        <h2 className="text-xl font-semibold">Click Me to Expand</h2>
+        <h2 className="text-xl font-semibold p-4">{title}</h2>
       </div>
 
       {/* Popup modal */}
@@ -37,9 +39,9 @@ export default function ExpandableCard() {
             </button>
 
             {/* Popup Content */}
-            <h2 className="text-2xl font-bold mb-4">Expanded View</h2>
+            <h2 className="text-2xl font-bold mb-4">{title}</h2>
             <p className="text-gray-600 text-center">
-              Here is more detailed information inside the popup window. You can close it anytime by clicking the "×" button.
+              {desc}
             </p>
           </div>
         </div>

@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@keyframes letter {
+    0% { color: white; }
+    50% { color: limegreen; }
+    100% { color: white; }
+  }
+  
+  .animate-letter {
+    animation: letter 3s infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: limegreen; }
+  }
+  
+  .animate-typing {
+    animation: typing 3s steps(12) 1 forwards, blink 0.5s step-end infinite;
+    width: 0;
+    overflow: hidden;
+  }
+  

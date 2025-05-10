@@ -18,7 +18,7 @@ function Home() {
         return (
             
             <div>
-            <Bodycomp title={homedata.title} para1={homedata.para1} para2={homedata.para2} />
+            <Bodycomp title={homedata.title} title2={homedata.title2} para1={homedata.para1} para2={homedata.para2} className='md:h-screen h-75' />
     <Scroller content={dummyContent} />
 
     </div>

@@ -16,6 +16,7 @@ import ErrorElement from "./ErrorElement";
 import Scroller from "./Scroller";
 import Bodycomp from "./Bodycomp";
 import ExpandableCard from "./ExpandableCard";
+import AnimatedHeading from "./AnimatedHeading";
 export {
     Header,
     Footer,
@@ -35,5 +36,5 @@ export {
     Scroller,
     Bodycomp,
     ExpandableCard,
-
+    AnimatedHeading,
 }
