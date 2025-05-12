@@ -12,8 +12,8 @@ const RotatingContent = ({ item, inView }) => (
 
     {/* Left Text */}
     <div className="w-full flex flex-col items-center md:text-left mb-6 md:mb-0 ">
-      <h2 className="text-4xl font-bold mb-4 text-green-900">{item.title}</h2>
-      <p className="text-xl text-justify md:ml-10 text-green-800 font-semibold">{item.description}</p>
+      <h2 className="md:text-4xl text-3xl font-bold mb-4 text-green-900">{item.title}</h2>
+      <p className="md:text-xl text-lg text-justify md:ml-10 text-green-800">{item.description}</p>
     </div>
 
     {/* Right Image */}
