@@ -2,7 +2,6 @@ import React from 'react'
 import { Bodycomp, PostCard } from '../components'
 import {Aboutdata,bodydata,aboutdesc} from '../Contents/Aboutdata'
 import TypingHeading from '../components/TypingHeading'
-import TeamPage from './Teampage'
 function About() {
   return (
     <>
@@ -15,7 +14,6 @@ function About() {
         
         <PostCard contents={Aboutdata} />
     </div>
-    <TeamPage />
     </>
   )
 }

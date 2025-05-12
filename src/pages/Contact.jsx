@@ -1,7 +1,7 @@
 import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Bodycomp } from "../components";
-import TeamPage from "./Teampage";
+import TeamPage from "./TeamPage";
 export default function Contact() {
   return (
     <div>        
