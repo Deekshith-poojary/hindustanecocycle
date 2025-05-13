@@ -57,10 +57,10 @@ function Footer() {
           <div className="w-full md:w-1/4 p-6">
             <h3 className="text-xs font-semibold uppercase text-gray-400 mb-4">Contact Us</h3>
             <p className="text-base text-gray-50">
-              Email: <a className="hover:text-gray-300" href="mailto:support@hindustanecocycle.com">support@hindustanecocycle.com</a>
+              Email: <a className="hover:text-gray-300" href="mailto:Info@recyclofyllp.com">Info@recyclofyllp.com</a>
             </p>
             <p className="text-base text-gray-50">
-              Phone: <a className="hover:text-gray-300" href="tel:+911234567890">+91 12345 67890</a>
+              Phone: <a className="hover:text-gray-300" href="tel:+919113827496">+91 9113827496</a>
             </p>
           </div>
         </div>

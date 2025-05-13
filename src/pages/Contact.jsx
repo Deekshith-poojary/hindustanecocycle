@@ -18,25 +18,25 @@ export default function Contact() {
           <Mail className="w-6 h-6 text-blue-400" />
           <div className="flex flex-col">
             <span className="text-sm font-semibold">Email</span>
-            <p className="text-gray-600 text-sm">contact@example.com</p>
+            <p className="text-gray-600 text-sm">Info@recyclofyllp.com</p>
           </div>
         </a>
 
         {/* Phone */}
         <a
-          href="tel:+12345678901"
+          href="tel:+919113827496"
           className="flex items-center gap-4 hover:text-blue-500 transition-colors"
         >
           <Phone className="w-6 h-6 text-blue-400" />
           <div className="flex flex-col">
             <span className="text-sm font-semibold">Phone</span>
-            <p className="text-gray-600 text-sm">+1 (234) 567-8901</p>
+            <p className="text-gray-600 text-sm">+91 9113827496</p>
           </div>
         </a>
 
         {/* Address */}
         <a
-          href="https://maps.google.com/?q=123+Main+Street+Springfield+USA"
+          href="https://maps.google.com/?q=Plot+No.6+KIADB+Industrial+area+Nandikur+Padubidri+Udupi"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 hover:text-blue-500 transition-colors"
@@ -45,9 +45,9 @@ export default function Contact() {
           <div className="flex flex-col">
             <span className="text-sm font-semibold">Address</span>
             <p className="text-gray-600 text-sm">
-              123 Main Street,
+            Plot No.6 KIADB Industrial area Nandikur Padubidri,
               <br />
-              Springfield, USA
+              Udupi, Karnataka 574111
             </p>
           </div>
         </a>
